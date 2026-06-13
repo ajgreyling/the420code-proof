@@ -1,0 +1,1974 @@
+{
+  "APP-1.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-1.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-1.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-1.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-1.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-10.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-10.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-10.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-10.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-10.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-11.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-11.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-11.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-11.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-11.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-12.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-12.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-12.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-12.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-12.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-12.6": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-2.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-2.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-2.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-2.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-2.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-3.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-3.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-3.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-3.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-3.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-4.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-4.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-4.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-4.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-4.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-5.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-5.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-5.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-5.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-5.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "APP-6.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-6.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-6.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-6.4": {
+    "test_kind": "theoretical",
+    "fire_condition": ""
+  },
+  "APP-6.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-7.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-7.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-7.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-7.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-7.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-8.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-8.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-8.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-8.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-8.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-9.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-9.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-9.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "APP-9.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "APP-9.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-1.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-1.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-1.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-1.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-1.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-10.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-10.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-10.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-10.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-10.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-10.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-11.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "HOR-11.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-11.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-11.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-11.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-12.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-12.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-12.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-12.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-12.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-12.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-13.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-13.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-13.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-13.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-13.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-13.6": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-2.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-2.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-2.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-2.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-2.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-3.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-3.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-3.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-3.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-3.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-4.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-4.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-4.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-4.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-4.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-5.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-5.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-5.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-5.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-5.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-6.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-6.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-6.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-6.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-6.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-7.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-7.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-7.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-7.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-7.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-8.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-8.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-8.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-8.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-8.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-9.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-9.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-9.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "HOR-9.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "HOR-9.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-21": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-22": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-23": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-24": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-25": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-25.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-26": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-27": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-30": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-30.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-30.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-30.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-30.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-31.1": {
+    "test_kind": "structural",
+    "fire_condition": "If awareness does not follow from irreversible record-writing"
+  },
+  "KS-31.2": {
+    "test_kind": "structural",
+    "fire_condition": "If a bias other than ε produces a wider coupled corridor over long timescales"
+  },
+  "KS-31.3": {
+    "test_kind": "structural",
+    "fire_condition": "If a coherent third category beyond stabilizing/destabilizing exists"
+  },
+  "KS-31.4": {
+    "test_kind": "structural",
+    "fire_condition": "If accumulated records do not produce convergent consequence patterns regardless of sample size"
+  },
+  "KS-31.5": {
+    "test_kind": "empirical",
+    "fire_condition": "If consequence geometry produces worse civilizational outcomes than human-authored law over one generation (≈25 years) in any domain where i"
+  },
+  "KS-31.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-31.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-31.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-31.9": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-32": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-32.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-32.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-32.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-32.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-32.5": {
+    "test_kind": "structural",
+    "fire_condition": "If the removal cost does not produce a saturation point —"
+  },
+  "KS-32.6": {
+    "test_kind": "structural",
+    "fire_condition": "If the"
+  },
+  "KS-32.7": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-32.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-33": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-33.1": {
+    "test_kind": "structural",
+    "fire_condition": "If life cannot be defined as resolution capacity — if agency requires a different criterion —"
+  },
+  "KS-33.2": {
+    "test_kind": "structural",
+    "fire_condition": "If the boundary cannot be computed from coupling geometry for specific interventions — if the threshold is inherently political rather than "
+  },
+  "KS-33.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-33.4": {
+    "test_kind": "structural",
+    "fire_condition": "If pre-agency can be shown to have equal structural claim to organism resources as active agency"
+  },
+  "KS-33.5": {
+    "test_kind": "structural",
+    "fire_condition": "If coupling capacity projection cannot converge from accumulated records"
+  },
+  "KS-33.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-33.7": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-33.8": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-33.9": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-34": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-34.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-34.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-34.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-34.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-34.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-34.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-34.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-35": {
+    "test_kind": "structural",
+    "fire_condition": "If multiple solutions exist"
+  },
+  "KS-35.1": {
+    "test_kind": "structural",
+    "fire_condition": "If value can be created from nothing or destroyed without trace in an economic system"
+  },
+  "KS-35.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-35.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-35.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-35.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-35.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-35.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-36.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-36.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-36.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-36.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-36.9": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-37": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-37.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-37.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-37.8": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-38.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-38.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-38.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-38.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-38.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-38.6": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-38.7": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-38.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-39": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-39.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-39.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-39.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-39.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-39.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-39.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-40": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-40.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-40.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-40.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-40.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-40.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-40.6": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-41": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-41.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-41.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-41.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-41.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-41.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-41.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-41.7": {
+    "test_kind": "structural",
+    "fire_condition": "If the cosmological break is shown to be a fundamentally different process from nuclear fusion — different symmetry, different mechanism —"
+  },
+  "KS-41.8": {
+    "test_kind": "structural",
+    "fire_condition": "If an intrinsic scale is found within the axiom system — a preferred length, energy, or resolution below which the axiom structure does not "
+  },
+  "KS-41.9": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-42.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-42.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-42.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-42.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-42.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-42.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-43": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-44": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-45": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-48": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-50": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-51": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-52": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-53": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-54": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-55": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-56": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-57": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-58": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-59": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-60": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-61": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-62": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-64": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-AC.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-AC.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-AC.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-AC.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-AC.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-AC.6": {
+    "test_kind": "structural",
+    "fire_condition": "If Architecture B sorts the way Architecture A sorts"
+  },
+  "KS-AC.7": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-B.0": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-B.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-B.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-B.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-B.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-BAR.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-BAR.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-BAR.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-BAR.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-BAR.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-BAR.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-BAR.7": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-BAR.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-D.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-D.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-I.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-I.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-I.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-I.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-I.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-ID.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-L.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-L.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-L.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-L.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-L.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-L.7": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-NPP.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-NPP.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-NPP.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-O.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-O.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-O.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-P.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-P.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-Q.10": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-Q.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-Q.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-Q.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-R.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.10": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-R.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-R.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-R.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-R.9": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.10": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-RC.11": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-RC.6": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-RC.7": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.8": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RC.9": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-RM.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-RM.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "KS-RM.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-RM.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-S.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-S.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-S.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-V.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "KS-V.10": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.11": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.12": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.13": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.14": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.15": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.16": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.17": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.18": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.19": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.2": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.20": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.21": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.22": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.23": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.24": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.5": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.6": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.7": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.8": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "KS-V.9": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "PZ-1.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-1.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-1.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-1.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-1.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-1.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-10.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-10.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-10.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-10.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-10.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-11.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-11.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-11.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-11.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-11.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-12.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-12.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-12.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-12.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-12.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-2.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-2.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-2.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-2.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-2.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-3.1": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "PZ-3.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-3.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-3.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-3.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-4.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-4.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-4.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-4.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "PZ-4.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-5.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-5.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-5.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-5.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-5.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-6.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-6.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-6.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-6.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-6.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-7.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-7.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-7.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-7.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-7.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-8.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-8.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-8.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-8.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "PZ-8.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-9.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-9.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-9.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "PZ-9.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "PZ-9.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-1.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-1.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-1.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-1.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-1.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-10.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-10.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-10.3": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "RES-10.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-10.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-11.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-11.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-11.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-11.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-11.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-12.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-12.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-12.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-12.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-12.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-12.6": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-2.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-2.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-2.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-2.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-2.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-3.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-3.2": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-3.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-3.4": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-3.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-4.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-4.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-4.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-4.4": {
+    "test_kind": "empirical",
+    "fire_condition": ""
+  },
+  "RES-4.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-5.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-5.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-5.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-5.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-5.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-6.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-6.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-6.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-6.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-6.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-7.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-7.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-7.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-7.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-7.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-8.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-8.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.5.1": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.5.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.5.3": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-8.5.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-8.5.5": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-9.1": {
+    "test_kind": "logical",
+    "fire_condition": ""
+  },
+  "RES-9.2": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-9.3": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-9.4": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  },
+  "RES-9.5": {
+    "test_kind": "structural",
+    "fire_condition": ""
+  }
+}

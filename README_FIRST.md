@@ -8,8 +8,8 @@ Contents: the AP44 draft (v0.6, formatting conformed to the AP02 house
 standard — content identical to v0.5, which is retained in `superseded/`
 with v0.1; G supplies v0.2–v0.4 from his downloads separately), the Tier 1
 working paper with dataset/script/figure, the full provenance chain
-PROV-CCC.1–4 with the session record, the two extracted conversation
-artifacts (T1, T2), the first analog-archive photographs, and the escrow
+PROV-CCC.1–5 with the session record, the two extracted conversation
+artifacts (T1, T2), the complete analog archive (M1a evening set, M1b morning set of thirteen frames plus one verified duplicate — PROV-CCC.5), and the escrow
 folder (read its README — never public).
 
 Author rulings recorded 2026-08-10: T1 publishes as-is (option a — G's

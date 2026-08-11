@@ -1,3 +1,5 @@
+# ⬛ LOCKED EDITION — read AJ_LOCK_INSTRUCTIONS.md first. AP44 locked 2026-08-11 at 9.3.
+
 # READ THIS FIRST — AP44 bundle for AJ, 2026-08-10
 
 **Start with `AJ_Handover_and_Tier2_Protocol.md`. Its read-order warning is

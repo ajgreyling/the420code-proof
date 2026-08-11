@@ -63,11 +63,17 @@ Be precise about the claim, because overclaiming would dishonour the work:
   falsification surface* — the things that separate a serious theory from a crank's fortress. It
   does **not** mean experimental confirmation. That is for instruments and time, not for this repo.
 
-What makes the corpus unusually testable: G publishes **560 "kill switches"** (Master Kill Switch
-Registry **v5.25**) — explicit, numbered conditions that would falsify specific claims, including
-the math for each. He hands you the weapons to destroy his own theory. This repo indexes them so
-you can wield them. (The engine's ingested counts reflect the mirror snapshot they were built from;
-they re-sync on the next mirror pass.)
+What makes the corpus unusually testable: G publishes **568 "kill switches"** (Master Kill Switch
+Registry **v5.27**, after the AP44 lock advance on the true July baseline of v5.26/561) — explicit,
+numbered conditions that would falsify specific claims, including the math for each. He hands you
+the weapons to destroy his own theory. This repo indexes them so you can wield them. (The engine's
+ingested counts reflect the mirror snapshot they were built from; they re-sync on the next mirror
+pass. **Nothing here ships v5.26/567** — that number was a stale-baseline artefact; PROV-CCC.8
+carries the erratum.)
+
+**Gravity scorecard (the fork, post-AP44):** structural G = 6.72060 × 10⁻¹¹ (+0.69%, provisioned)
+**and** realised G = 6.67192 × 10⁻¹¹ (−0.036%, α²¹(1+1/π)/(1+α)·ℏc/m_e²). Sign flip stated; the
+watch line is KS-CCC.3's migration fork. a₀, H₀, dark sector, proton, neutron untouched.
 
 ---
 
@@ -75,7 +81,7 @@ they re-sync on the next mirror pass.)
 
 The four axioms **S** (Symmetry), **B** (Break), **R** (Record), **C** (Constraint) — derived
 from the single premise *"at least one record exists"* (deny it, and you have just made a record) —
-plus the one measured input **α**, generate the corpus. The **43 Artist's Proofs** climb from that
+plus the one measured input **α**, generate the corpus. The **44 Artist's Proofs** climb from that
 premise through spacetime, quantum mechanics, the forces, cosmology, and — by the same machinery —
 to a terminal ethic. Every claim is tied to one or more kill switches.
 

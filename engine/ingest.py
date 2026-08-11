@@ -75,15 +75,15 @@ CORPUS_FACTS = {
     "url": "https://the420code.org",
     "measured_input": "alpha (fine-structure constant) ~ 1/137",
     "free_parameters": "0",
-    "ks_declared_total": "549",
-    "ks_declared_physics": "266",
-    "ks_declared_philosophy": "27",
+    "ks_declared_total": "568",
+    "ks_declared_physics": "284",
+    "ks_declared_philosophy": "28",
     "ks_declared_oh_models": "256",
-    "ks_declared_closed": "15",
-    "ks_declared_live": "531",
+    "ks_declared_closed": "12",
+    "ks_declared_live": "552",
     "ks_declared_non_negotiable": "6",
-    "ap_published": "42 (AP01-AP42); AP43 announced but 404 on the live site",
-    "registry_version_note": "Live site declares 549 KS; Zenodo v1 (2026-03-24) declared 258 — work is expanding",
+    "ap_published": "44 (AP01-AP44); AP44 The Snap LOCKED 2026-08-11",
+    "registry_version_note": "MKSR v5.27 after AP44 lock on true July baseline v5.26/561; nothing ships v5.26/567 (PROV-CCC.8 erratum)",
 }
 
 
@@ -142,6 +142,8 @@ def build(reset: bool = True) -> sqlite3.Connection:
     # prediction → originating AP (from Ø Predictions' own attribution)
     pred_origin = {
         "proton_electron_mass_ratio": "AP30", "gravitational_constant": "AP28",
+        "gravitational_constant_realised": "AP44",
+
         "neutron_proton_mass_diff": "AP30", "mond_acceleration_a0": "AP18",
         "dark_sector_de_dm_ratio": "AP42",
     }

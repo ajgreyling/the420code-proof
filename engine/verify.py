@@ -71,16 +71,28 @@ def compute() -> list[Prediction]:
         formula="21²×4 + 21×3 + 3² + α×21×(1 − 1/(84π)) + α²×21×16/1836"))
 
     # Part II — The Strength of Gravity -------------------------------------------
-    # G = α²¹ × (1 + 1/π) × ħc / m_e²
+    # Structural (provisioned) G = α²¹ × (1 + 1/π) × ħc / m_e²   — AP28, Edition 1
+    # Realised G = structural / (1 + α)                            — AP44 The Snap (LOCKED)
+    # Both sit in the scorecard as a fork. verify_g_original.py and the parity
+    # test are untouched and continue to certify Edition 1's structural arithmetic.
     alpha_G = ALPHA**21 * (1 + 1 / math.pi)
-    G_pred = alpha_G * HBAR * C / M_E**2
+    G_struct = alpha_G * HBAR * C / M_E**2
+    G_realised = G_struct / (1 + ALPHA)
     G_meas = 6.67430e-11
     preds.append(Prediction(
-        key="gravitational_constant", part="II", name="Gravitational constant G",
-        predicted=G_pred, measured=G_meas, unit="N·m²/kg²",
-        residual=(G_pred - G_meas) / G_meas * 100, residual_unit="%",
+        key="gravitational_constant", part="II", name="Gravitational constant G (structural)",
+        predicted=G_struct, measured=G_meas, unit="N·m²/kg²",
+        residual=(G_struct - G_meas) / G_meas * 100, residual_unit="%",
         tolerance=1.0,  # G claims sub-1% (~0.69%)
-        measured_source="CODATA 2018", formula="α²¹ × (1 + 1/π) × ħc / m_e²"))
+        measured_source="CODATA 2022", formula="α²¹ × (1 + 1/π) × ħc / m_e²"))
+    preds.append(Prediction(
+        key="gravitational_constant_realised", part="II",
+        name="Gravitational constant G (realised, AP44)",
+        predicted=G_realised, measured=G_meas, unit="N·m²/kg²",
+        residual=(G_realised - G_meas) / G_meas * 100, residual_unit="%",
+        tolerance=1.0,  # −0.036% vs CODATA centre; watch line = KS-CCC.3 migration fork
+        measured_source="CODATA 2022",
+        formula="α²¹ × (1 + 1/π)/(1 + α) × ħc / m_e²"))
 
     # Part III — The Neutron's Whisper --------------------------------------------
     # (m_n − m_p)/m_e = 3×(1 − 1/(2π)) + α×(1 + 1/(2π))

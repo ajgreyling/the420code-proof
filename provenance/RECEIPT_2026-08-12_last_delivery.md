@@ -17,6 +17,4 @@ This matches PROV-CCC.6 §2 (loss recorded; delta fully logged in PROV-CCC.2 §5
 
 ## Still open after this delivery
 
-- T1-final export digest (if distinct from T1 already held)
-- PROV-CCC.8 (registry totals erratum v5.27/568)
-- Outreach wave on the420code.org
+- Outreach wave on the420code.org (wave-hold: once, when author declares omission-accounting complete)

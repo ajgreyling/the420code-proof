@@ -62,8 +62,9 @@ the Tier 2 dispositions in `ANALYSIS_KS_CCC4.md`.
 
 The true July baseline was MKSR v5.26 / 561. The lock advance is **v5.27 · 568 ·
 44**. Nothing ships v5.26/567. That correction is applied on this side before
-any public badge moves. PROV-CCC.8 will carry the erratum on PROV-CCC.7's
-totals; the seven KS-CCC entries stand verbatim.
+any public badge moves. **PROV-CCC.8** (2026-08-16, digest `4686301e…`) now
+carries the erratum on PROV-CCC.7's totals; the seven KS-CCC entries stand
+verbatim.
 
 ## Bottom line
 

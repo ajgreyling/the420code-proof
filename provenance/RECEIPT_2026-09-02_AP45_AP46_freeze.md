@@ -22,6 +22,11 @@ AP45 The Blink FINAL v1.7 and AP46 The Stretch FINAL v1.5, both locked 2 Septemb
 
 The Master Kill Switch Registry rebuild (v5.26 of 11 July 2026 remains the registry of record; one build after AP48). AP48 The Assembly. The website (one update at the wave). The reviewer's rescore of the locked versions.
 
+## Commit hash
+
+`9d8be98ebb199c82880767a700cec1b9a1aa3fd6`  
+Tag: `ap45-ap46-locked-2026-09-02`
+
 ## Verifier disposition
 
 Timestamp anchor under the standing dual-home protocol. Publication waits for the wave after AP48 — ONE-WAVE: anchoring proceeds, publication consolidates. Outreach gate unchanged.

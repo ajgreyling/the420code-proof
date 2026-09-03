@@ -8,6 +8,7 @@
 #   ./run.sh mirror     (re-)download G's corpus from the420code.org into mirror/  (network; polite)
 #   ./run.sh extract    pdftotext every mirrored PDF → extract/txt/                (free, local)
 #   ./run.sh ingest     build the canon SQLite DB from the mirror                  (free, local)
+#   ./run.sh addenda    apply local-only switches/status not yet on the public site (free, local)
 #   ./run.sh gate       re-ingest + EXECUTE predictions + audit                    (free; exit 0/1/2)
 #   ./run.sh verify     structured reconstruction of G's 5 predictions             (free)
 #   ./run.sh verify-g   G's VERBATIM Appendix B script (his published verify.py)   (free)
@@ -46,6 +47,7 @@ case "$cmd" in
     done
     echo "[extract] $n PDFs → extract/txt/";;
   ingest)    exec "$PY" -m engine.ingest "$@";;
+  addenda)   exec "$PY" -m engine.ingest_local_addenda "$@";;
   gate)      exec "$PY" -m engine.gate "$@";;
   verify)    exec "$PY" -m engine.verify "$@";;
   verify-g)  exec "$PY" -m engine.verify_g_original "$@";;
@@ -63,6 +65,7 @@ case "$cmd" in
   build)
     bash "$0" extract
     "$PY" -m engine.ingest
+    "$PY" -m engine.ingest_local_addenda
     "$PY" -m engine.gate || true
     bash "$0" report
     echo "[build] free pipeline complete.";;

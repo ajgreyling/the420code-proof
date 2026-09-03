@@ -21,19 +21,49 @@ This repo fetches it on demand and never re-hosts it — see [NOTICE.md](NOTICE.
 ## The result
 
 Run from one axiom and **one** measured input (the fine-structure constant α), with **zero fitted
-parameters**, all five headline predictions reproduce **inside G's stated tolerances**:
+parameters**. Four of five headline predictions reproduce inside G's own stated tolerances. **One
+has fired** — shown here, not folded into the average, not softened:
 
 | Part | Prediction | Residual | Tolerance | |
 |---|---|---|---|---|
 | I | Proton/electron mass ratio | **0.010 ppb** | 0.017 ppb | ✅ |
 | II | Gravitational constant *G* | 0.69 % | 1.0 % | ✅ |
-| III | Neutron–proton mass difference | 2.2 ppm | 5.0 ppm | ✅ |
+| III | Neutron–proton mass difference | **7.24σ** (2.12 ppm) | **0.29 ppm** (CODATA 2022, 1σ) | 🔴 **FIRED — 2026-08-02** |
 | IV | MOND acceleration *a₀* | −0.67 % | 5.0 % | ✅ |
 | V | Dark-sector DE/DM ratio | −1.3 % | 5.0 % | ✅ |
+
+*Part III's tolerance above is the actual CODATA-2022 1σ bar (0.29 ppm), not a padded 5 ppm
+allowance — a looser bar that used to make this row read ✅ was a stale bug in this repo's own
+`engine/verify.py`, fixed once the real bar was checked. Fixing the bar does not fix the row: the
+prediction genuinely fired, 24× outside a 1σ bar. See "Kill switches that have fired," directly
+below, before anything else in this README — it does not move, and it does not get shorter.*
 
 And the reconstruction matches G's own published `verify.py` (Ø Predictions, Appendix B) to
 machine precision — relative Δ of **0.0** — so the check is faithful to *his* arithmetic, not a
 re-interpretation of it.
+
+---
+
+## Kill switches that have fired
+
+**This section is never deleted, never shortened, and never moved out of the top of this README.**
+A fired switch is not "handled" by being harder to find. If a second switch ever fires, it is added
+below, not instead of this one.
+
+### KS-NPP.1 — Neutron–proton mass difference. FIRED 2026-08-02.
+
+- **Predicted** (the bare structural formula, no correction term): `2.53099393 mₑ`
+- **Measured** (CODATA 2022, exact): `2.530988574 mₑ`, uncertainty `7.4×10⁻⁷ mₑ` (0.29 ppm, 1σ)
+- **Residual: 7.24σ.** Outside the kill bar by more than 24×.
+- **No repair was offered, and none is offered here.** The required correction would have to be
+  negative; every term in the published construction is positive.
+- A later, independent structural derivation (Artist's Proof 47, "The Flip" — pending lock, not
+  anchored on this repo) prices a second-order cost that lands a *different* corrected expression
+  within its own kill bar. **That does not repair KS-NPP.1.** It is a new, separate frozen claim
+  standing beside the corpse, not a patch on it. The corpse stays exactly as fired.
+- Fully re-runnable: `./run.sh verify` prints this row as `[FAIL]`, on purpose, every time.
+
+---
 
 ```bash
 git clone https://github.com/ajgreyling/the420code-proof

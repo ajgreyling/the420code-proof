@@ -96,16 +96,23 @@ def compute() -> list[Prediction]:
 
     # Part III — The Neutron's Whisper --------------------------------------------
     # (m_n − m_p)/m_e = 3×(1 − 1/(2π)) + α×(1 + 1/(2π))
+    # FIRED 2026-08-02 at 7.24σ (KS-NPP.1) — this prediction is dead and is kept in
+    # the suite on purpose, reporting FAIL, exactly as fired. Do not loosen the
+    # tolerance to make this pass; that would erase the record of the kill. See
+    # the "Kill switches that have fired" section of README.md, which is never
+    # deleted, shortened, or moved.
     static_np = 3 * (1 - 1 / (2 * math.pi))
     dynamic_np = ALPHA * (1 + 1 / (2 * math.pi))
     np_pred = static_np + dynamic_np
-    np_meas = 2.5309883
+    mn_me_meas = 1838.68366200        # CODATA 2022, m_n/m_e
+    np_meas = mn_me_meas - mp_me_meas  # CODATA 2022 exact difference (mp_me_meas from Part I)
+    np_meas_u = 7.4e-7                 # CODATA 2022 audited 1σ on the difference, mₑ
     preds.append(Prediction(
         key="neutron_proton_mass_diff", part="III", name="Neutron-proton mass difference",
         predicted=np_pred, measured=np_meas, unit="mₑ",
         residual=(np_pred - np_meas) / np_meas * 1e6, residual_unit="ppm",
-        tolerance=5.0,  # G claims ~2 ppm
-        measured_source="CODATA 2018", formula="3×(1 − 1/(2π)) + α×(1 + 1/(2π))"))
+        tolerance=np_meas_u / np_meas * 1e6,  # ≈0.292 ppm, CODATA-2022 1σ (was a stale 5 ppm)
+        measured_source="CODATA 2022", formula="3×(1 − 1/(2π)) + α×(1 + 1/(2π))"))
 
     # Part IV — The Floor of Gravity (MOND a₀) ------------------------------------
     # a_0 = C_S² × cH_0 / (2π);  C_S² = 2 ln(sec(½) + tan(½)) ≈ 1.0445 (geometric, NOT α)

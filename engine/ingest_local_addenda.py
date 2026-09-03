@@ -14,18 +14,24 @@ status changes that ARE anchored on this repo (not merely delivered/pending):
   * KS-NPP.1: LIVE -> FIRED. Empirical fact, independent of any paper's lock
     status -- the neutron-proton mass-difference prediction departed the
     measured value by 7.24 sigma on 2026-08-02. Documented in AP45 FINAL v1.7
-    section 10 ("the first death") and AP47 (pending lock, not anchored here,
-    cited only as corroboration -- the fired status itself does not depend on
-    AP47 being anchored).
+    section 10 ("the first death") and AP47 section 7 ("the deaths, shown").
+    Still not repaired by either -- both explicitly refuse to repair it.
   * AP45 (The Blink, FINAL v1.7) and AP46 (The Stretch, FINAL v1.5): four new
     kill switches each, sourced verbatim from FREEZE_REGISTER_AP45_AP46_2026-09-02.md
-    section headers, both anchored on this repo at tag
-    ap45-ap46-locked-2026-09-02.
+    section headers, anchored on this repo at tag ap45-ap46-locked-2026-09-02.
+  * AP47 (The Flip, FINAL v3): four new kill switches (KS-FLIP.1-4), sourced
+    verbatim from AP47_The_Flip_FINAL_v3.md section 10, anchored on this repo
+    at tag ap47-locked-2026-09-03 -- LOCKED at the author's own direct
+    confirmation, not merely Studio G's attestation (see
+    provenance/RECEIPT_2026-09-03_AP47_lock_attestation.md for why that
+    distinction mattered here).
 
-Deliberately NOT added here: AP47's KS-FLIP.1-4. AP47 ("The Flip") is still
-pending lock -- no commit or tag exists for it on this repo -- so its switches
-do not belong in a canon that represents what's actually anchored. Add them
-only once AP47 gets its own anchor, the same way AP45/AP46 did.
+Historical note: KS-FLIP.1-4 were deliberately withheld from this module for
+two days while AP47 sat at "pending lock" (freeze-anchored, receipted, but not
+authorized) -- added only once the lock was actually confirmed by the author
+directly, not by a delivered document asserting it on his behalf. That's the
+same discipline this module applies to AP45/AP46 and to the KS-NPP.1 status
+change: only what's actually anchored, never what's merely claimed.
 
 Run after `engine.ingest.build()` (or via `./run.sh addenda`, which does both):
 
@@ -87,13 +93,48 @@ _NEW_SWITCHES = [
         "AP46's standing stays docked.",
         "REGISTERED", "REGISTERED — for AP48", None, "structural", "AP46", "physics",
     ),
+    (
+        "KS-FLIP.1", "The frozen row",
+        "Dies if an improved measurement of the neutron-proton mass difference departs from "
+        "Delta_real = Delta_bare/(1+alpha^2/8pi) (displayed 2.53098857035) beyond the audited 1-sigma "
+        "bar: 7.4e-7 m_e (0.29 ppm), CODATA 2022. Nature-facing, live from this lock.",
+        "LIVE", "ARMED", "STRUCTURAL", "empirical", "AP47", "physics",
+    ),
+    (
+        "KS-FLIP.2", "Forced structure",
+        "Binding on author and desks. Fires if any element of the construction -- the order, the "
+        "divisor, the scope, the form, the process claim -- is ever shown to have been selected by "
+        "comparison with measurement rather than by the stated structural argument.",
+        "LIVE", "ARMED — binding on author and desks", "METHODOLOGICAL", "structural", "AP47", "physics",
+    ),
+    (
+        "KS-FLIP.3", "The truncation",
+        "The construction terminates at second order: no alpha^3 term exists. The absent "
+        "third-order piece sits at 3.9e-8 (5.3% of the audited bar, 0.020 eV) -- adjudication waits "
+        "on roughly twentyfold better metrology on the deuteron binding energy.",
+        "LIVE", "ARMED", "STRUCTURAL", "structural", "AP47", "physics",
+    ),
+    (
+        "KS-FLIP.4", "The scope",
+        "Formal domain: the cost operator's domain is the set of configurations holding a non-zero "
+        "second-scale epsilon (an orientation differing from its ground state under the same grip); "
+        "ground states are outside the domain by construction. Dies if a ground state is ever shown "
+        "to require the cost, or a configuration inside the domain shown to escape it.",
+        "LIVE", "ARMED", "STRUCTURAL", "structural", "AP47", "physics",
+    ),
 ]
 
-_SOURCE_NOTE = (
+_SOURCE_NOTE_45_46 = (
     "Sourced from FREEZE_REGISTER_AP45_AP46_2026-09-02.md, anchored on this repo at tag "
     "ap45-ap46-locked-2026-09-02. Not yet on the public the420code.org mirror (wave deferred "
     "until after AP48)."
 )
+_SOURCE_NOTE_47 = (
+    "Sourced from AP47_The_Flip_FINAL_v3.md section 10, anchored on this repo at tag "
+    "ap47-locked-2026-09-03. Not yet on the public the420code.org mirror (wave deferred "
+    "until after AP48)."
+)
+_SOURCE_NOTES = {"AP45": _SOURCE_NOTE_45_46, "AP46": _SOURCE_NOTE_45_46, "AP47": _SOURCE_NOTE_47}
 
 
 _NEW_PROOFS = [
@@ -102,6 +143,8 @@ _NEW_PROOFS = [
      "physics", "freeze-2026-09-02-ap45-ap46/AP45_The_Blink_FINAL_v1_7.md"),
     ("AP46", "artist_proof", "The Stretch",
      "physics", "freeze-2026-09-02-ap45-ap46/AP46_The_Stretch_FINAL_v1_5.md"),
+    ("AP47", "artist_proof", "The Flip",
+     "physics", "freeze-2026-09-01-ap47/AP47_The_Flip_FINAL_v3.md"),
 ]
 
 
@@ -124,7 +167,7 @@ def apply(conn: sqlite3.Connection) -> dict:
         conn.execute(
             "UPDATE kill_switch SET status='FIRED', status_raw=? WHERE id='KS-NPP.1'",
             ("FIRED — 7.24σ, 2026-08-02 (neutron-proton mass difference; AP45 §10 "
-             "'the first death'; corroborated by AP47, pending lock, not anchored here)",),
+             "'the first death'; AP47 §7 'the deaths, shown'; not repaired by either)",),
         )
         report["npp_fired"] = True
 
@@ -133,7 +176,7 @@ def apply(conn: sqlite3.Connection) -> dict:
         if existing:
             report["already_present"].append(sw_id)
             continue
-        full_desc = f"{desc} [local addendum -- {_SOURCE_NOTE}]"
+        full_desc = f"{desc} [local addendum -- {_SOURCE_NOTES[origin]}]"
         conn.execute(
             "INSERT INTO kill_switch(id,description,fire_condition,status,status_raw,"
             "kind_token,test_kind,origin,section,non_negotiable,sharpest,global) "
@@ -145,7 +188,7 @@ def apply(conn: sqlite3.Connection) -> dict:
         )
         report["inserted"].append(sw_id)
 
-    for ap in ("AP45", "AP46"):
+    for ap in ("AP45", "AP46", "AP47"):
         n = conn.execute(
             "SELECT count(*) FROM edge WHERE src=? AND rel='falsified_by'", (ap,)
         ).fetchone()[0]

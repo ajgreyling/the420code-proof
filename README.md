@@ -57,11 +57,33 @@ below, not instead of this one.
 - **Residual: 7.24σ.** Outside the kill bar by more than 24×.
 - **No repair was offered, and none is offered here.** The required correction would have to be
   negative; every term in the published construction is positive.
-- A later, independent structural derivation (Artist's Proof 47, "The Flip" — pending lock, not
-  anchored on this repo) prices a second-order cost that lands a *different* corrected expression
-  within its own kill bar. **That does not repair KS-NPP.1.** It is a new, separate frozen claim
-  standing beside the corpse, not a patch on it. The corpse stays exactly as fired.
+- A later, independent structural derivation (Artist's Proof 47, "The Flip" — LOCKED
+  2026-09-03, tag `ap47-locked-2026-09-03`) prices a second-order cost that lands a *different*
+  corrected expression within its own kill bar. **That does not repair KS-NPP.1.** It is a new,
+  separate frozen claim standing beside the corpse, not a patch on it. The corpse stays exactly
+  as fired.
 - Fully re-runnable: `./run.sh verify` prints this row as `[FAIL]`, on purpose, every time.
+
+### KS-45.1 — The corpus's H₀ (AP18, "The Floor"). FIRED 2026-09-03.
+
+- **Registered claim** (AP18, already public): H₀ = 2πa₀/(αc) = `74.3 ± 1.2` km/s/Mpc.
+- **What fired it**: Artist's Proof 48, "The Assembly" (LOCKED 2026-09-04, tag
+  `ap48-locked-2026-09-04`), derives H₀ = `67.45` km/s/Mpc from the corpus's own structure (the
+  AP46 cycle read through the standard age-rate relation). **Residual: 5.7σ** on the switch's
+  registered width — outside the kill bar.
+- **An erratum stands beside the corpse, not instead of it.** AP18's registered width omitted a
+  systematic uncertainty; corrected honestly it's `74.3 ± 14.9`, wide enough that the floor's
+  underlying relation still holds at 0.46σ. But re-sizing a live switch's width *after* the
+  corpus's own derivation has already contradicted it, and then not counting the switch as fired,
+  is exactly the repair this house refuses. **KS-45.1 fired on the width it was registered at.**
+  AP48's own KS-ASM.1 (window 64.4–70.8 km/s/Mpc) is the corpus's H₀ entry from this lock onward.
+- **What this costs, stated plainly, in AP48's own words:** *"The distinctive prediction the
+  corpus used to carry on H₀ — a value above both camps — is gone."* If the Cepheid ladder's ~73
+  is later confirmed as the true expansion rate, AP48's own KS-ASM.1 fires too, and flat ΛCDM at
+  the sky's partition fails alongside it — the corpus claims no advantage there either way.
+- The public parse of the Master Kill Switch Registry mis-tags this switch `CLOSED` — a parsing
+  artifact from a nearby summary line in the registry PDF, not a real status. `./run.sh addenda`
+  corrects it to `FIRED` and says exactly why in the switch's own `status_raw` field.
 
 ---
 

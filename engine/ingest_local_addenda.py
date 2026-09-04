@@ -25,13 +25,27 @@ status changes that ARE anchored on this repo (not merely delivered/pending):
     confirmation, not merely Studio G's attestation (see
     provenance/RECEIPT_2026-09-03_AP47_lock_attestation.md for why that
     distinction mattered here).
+  * AP48 (The Assembly, FINAL v1.1): three new kill switches (KS-ASM.1-3),
+    sourced verbatim from AP48_The_Assembly_FINAL_v1_1.md section 12, anchored
+    at tag ap48-locked-2026-09-04.
+  * KS-45.1 (AP18, "The Floor" -- already on the PUBLIC mirror): status
+    corrected to FIRED. The public parse of the Master Kill Switch Registry
+    mis-tags this switch CLOSED (a parsing artifact bleeding in text from a
+    nearby "closed switches" summary line, not a real status). The true
+    status, per AP48 section 12 and the AP18 erratum (both anchored here): H0
+    = 74.3 +/- 1.2 fires at 5.7 sigma against AP48's own derived H0 = 67.45
+    km/s/Mpc. The erratum corrects the switch's registered width (it omitted
+    a systematic uncertainty) but does not un-fire it -- the paper is
+    explicit that doing so would itself be the repair the house rule
+    forbids.
 
-Historical note: KS-FLIP.1-4 were deliberately withheld from this module for
-two days while AP47 sat at "pending lock" (freeze-anchored, receipted, but not
-authorized) -- added only once the lock was actually confirmed by the author
-directly, not by a delivered document asserting it on his behalf. That's the
-same discipline this module applies to AP45/AP46 and to the KS-NPP.1 status
-change: only what's actually anchored, never what's merely claimed.
+Historical note: KS-FLIP.1-4 and KS-ASM.1-3 were each deliberately withheld
+from this module while their papers sat at "pending lock" (freeze-anchored,
+receipted, but not authorized) -- added only once each lock was actually
+confirmed by the author directly, not by a delivered document asserting it on
+his behalf. That's the same discipline this module applies to AP45/AP46 and
+to the KS-NPP.1 / KS-45.1 status changes: only what's actually anchored,
+never what's merely claimed.
 
 Run after `engine.ingest.build()` (or via `./run.sh addenda`, which does both):
 
@@ -88,10 +102,11 @@ _NEW_SWITCHES = [
     ),
     (
         "KS-STRETCH.4", "The era surface",
-        "Registered for AP48: the storm's tail must reproduce a proportional-to-t^(1/2) era, a "
-        "proportional-to-t^(2/3) era, the transition, BBN, and the relic glow, or AP48 dies and "
-        "AP46's standing stays docked.",
-        "REGISTERED", "REGISTERED — for AP48", None, "structural", "AP46", "physics",
+        "MET at AP48's lock (2026-09-04): the storm's tail reproduces the t^(1/2) and t^(2/3) eras, "
+        "the transition, BBN, and the relic glow, on the corpus's own counts (AP48 section 9). "
+        "Conditional, not a clean close: if KS-ASM.2 ever fires, this switch re-opens with it and "
+        "AP46's standing returns to the dock.",
+        "MET", "MET — conditional on KS-ASM.2", None, "structural", "AP46", "physics",
     ),
     (
         "KS-FLIP.1", "The frozen row",
@@ -122,6 +137,31 @@ _NEW_SWITCHES = [
         "to require the cost, or a configuration inside the domain shown to escape it.",
         "LIVE", "ARMED", "STRUCTURAL", "structural", "AP47", "physics",
     ),
+    (
+        "KS-ASM.1", "The rate",
+        "Fires if the expansion rate, as the data settle it, lands outside the window 64.4-70.8 "
+        "km/s/Mpc in either direction, including if the Cepheid ladder is confirmed as the "
+        "expansion rate. On its upper edge this switch and flat LambdaCDM at the sky's partition "
+        "die together -- the corpus claims no advantage over the standard model there.",
+        "LIVE", "LIVE — EMPIRICAL", "EMPIRICAL", "empirical", "AP48", "physics",
+    ),
+    (
+        "KS-ASM.2", "The balance",
+        "Structural: fires if any recorded era requires the additive entry of epsilon or a "
+        "thinning count other than four and three, or if AP42's feeding history moves the pure "
+        "number of section 8 by more than the window can carry. Empirical: light-element yields, "
+        "the relic glow's rate, high-redshift growth shapes, and the sky's curvature share "
+        "(fires the flatness ruling if found non-zero at 5-sigma).",
+        "LIVE", "LIVE — STRUCTURAL and EMPIRICAL", "STRUCTURAL / EMPIRICAL", "empirical", "AP48", "physics",
+    ),
+    (
+        "KS-ASM.3", "The roof before the nuclei",
+        "Fires if alpha or G is found to vary at the epochs of the nuclei or the glow beyond the "
+        "bounds those records set, or if the light-element yields require an early-minutes "
+        "expansion rate the balance with AP08's count cannot give. A weaker comparative limb "
+        "(alpha vs G varying) is carried but safe by the looseness of G's bounds.",
+        "LIVE", "LIVE — EMPIRICAL", "EMPIRICAL", "empirical", "AP48", "physics",
+    ),
 ]
 
 _SOURCE_NOTE_45_46 = (
@@ -134,7 +174,15 @@ _SOURCE_NOTE_47 = (
     "ap47-locked-2026-09-03. Not yet on the public the420code.org mirror (wave deferred "
     "until after AP48)."
 )
-_SOURCE_NOTES = {"AP45": _SOURCE_NOTE_45_46, "AP46": _SOURCE_NOTE_45_46, "AP47": _SOURCE_NOTE_47}
+_SOURCE_NOTE_48 = (
+    "Sourced from AP48_The_Assembly_FINAL_v1_1.md section 12, anchored on this repo at tag "
+    "ap48-locked-2026-09-04. Not yet on the public the420code.org mirror (wave deferred "
+    "until after AP48's own wider adoption)."
+)
+_SOURCE_NOTES = {
+    "AP45": _SOURCE_NOTE_45_46, "AP46": _SOURCE_NOTE_45_46, "AP47": _SOURCE_NOTE_47,
+    "AP48": _SOURCE_NOTE_48,
+}
 
 
 _NEW_PROOFS = [
@@ -145,11 +193,14 @@ _NEW_PROOFS = [
      "physics", "freeze-2026-09-02-ap45-ap46/AP46_The_Stretch_FINAL_v1_5.md"),
     ("AP47", "artist_proof", "The Flip",
      "physics", "freeze-2026-09-01-ap47/AP47_The_Flip_FINAL_v3.md"),
+    ("AP48", "artist_proof", "The Assembly",
+     "physics", "freeze-2026-09-04-ap48/AP48_The_Assembly_FINAL_v1_1.md"),
 ]
 
 
 def apply(conn: sqlite3.Connection) -> dict:
-    report = {"npp_fired": False, "inserted": [], "already_present": [], "proofs_inserted": []}
+    report = {"npp_fired": False, "ks45_fired": False, "inserted": [], "already_present": [],
+              "proofs_inserted": []}
 
     for ap_id, kind, title, domain, pdf in _NEW_PROOFS:
         existing = conn.execute("SELECT id FROM proof WHERE id=?", (ap_id,)).fetchone()
@@ -171,6 +222,18 @@ def apply(conn: sqlite3.Connection) -> dict:
         )
         report["npp_fired"] = True
 
+    # KS-45.1 (AP18, public): the public parse mis-tags it CLOSED (a parsing artifact).
+    # True status per AP48 section 12 + the AP18 erratum, both anchored: FIRED.
+    row45 = conn.execute("SELECT status FROM kill_switch WHERE id='KS-45.1'").fetchone()
+    if row45 is not None:
+        conn.execute(
+            "UPDATE kill_switch SET status='FIRED', status_raw=? WHERE id='KS-45.1'",
+            ("FIRED — 5.7σ on its registered width, 2026-09-03/04 (AP18's H₀=74.3±1.2 vs "
+             "AP48's derived 67.45 km/s/Mpc; AP48 §12, AP18 erratum; corrected width 74.3±14.9 "
+             "does not un-fire it — the paper refuses that as a repair)",),
+        )
+        report["ks45_fired"] = True
+
     for sw_id, desc, fire_cond, status, status_raw, kind_token, test_kind, origin, section in _NEW_SWITCHES:
         existing = conn.execute("SELECT id FROM kill_switch WHERE id=?", (sw_id,)).fetchone()
         if existing:
@@ -188,7 +251,7 @@ def apply(conn: sqlite3.Connection) -> dict:
         )
         report["inserted"].append(sw_id)
 
-    for ap in ("AP45", "AP46", "AP47"):
+    for ap in ("AP45", "AP46", "AP47", "AP48"):
         n = conn.execute(
             "SELECT count(*) FROM edge WHERE src=? AND rel='falsified_by'", (ap,)
         ).fetchone()[0]
@@ -207,6 +270,7 @@ def main() -> int:
     n_total = conn.execute("SELECT count(*) FROM kill_switch").fetchone()[0]
     conn.close()
     print(f"[addenda] KS-NPP.1 -> FIRED: {report['npp_fired']}")
+    print(f"[addenda] KS-45.1 -> FIRED: {report['ks45_fired']}")
     print(f"[addenda] inserted: {', '.join(report['inserted']) or '(none)'}")
     if report["already_present"]:
         print(f"[addenda] already present, skipped: {', '.join(report['already_present'])}")

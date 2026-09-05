@@ -3,9 +3,9 @@
 
 Rebuilds canon/420code.db from the mirror, deterministically and for free:
   * axioms S/B/R/C (from llms.txt)            → axiom
-  * 42 Artist's Proofs + companion prose      → proof  (8-part structure from llms.txt)
+  * 48 Artist's Proofs + companion prose      → proof  (8-part structure from llms.txt)
   * 5 executable predictions                  → prediction  (from engine.verify — the oracle)
-  * 515 kill switches                         → kill_switch  (from engine.parse_registry)
+  * kill switches (583 declared, v5.27)       → kill_switch  (from engine.parse_registry)
   * provenance / declared corpus counts       → corpus_fact
   * dependency edges (proof→axiom, pred→proof, ks→proof, proof→part) → edge
 
@@ -41,14 +41,27 @@ PARTS = {
     "IV":   ("Forces & Particles", "Gauge symmetry, Standard Model, corrections",
              ["AP06", "AP15", "AP16", "AP14", "AP02"]),
     "V":    ("Cosmology", "Measurement, dark sector, MOND, gravity",
-             ["AP07", "AP17", "AP18", "AP19", "AP28"]),
+             ["AP07", "AP17", "AP18", "AP19", "AP28", "AP44", "AP45"]),
     "VI":   ("Consciousness & Agency", "Observer, mass ratios, alignment, ethics",
-             ["AP29", "AP30", "AP31", "AP32", "AP33"]),
+             ["AP29", "AP30", "AP31", "AP32", "AP33", "AP43", "AP47"]),
     "VII":  ("Applications", "Inversion, economics, information, boundaries",
              ["AP34", "AP35", "AP36", "AP37", "AP38"]),
     "VIII": ("Closure", "Scaffold, loop, clock, completeness",
-             ["AP39", "AP41", "AP42", "AP21", "AP22", "AP23", "AP24", "AP25", "AP26", "AP27"]),
+             ["AP39", "AP41", "AP42", "AP21", "AP22", "AP23", "AP24", "AP25", "AP26", "AP27",
+              "AP46", "AP48"]),
 }
+# AP43-48 (post-v4.4 additions) placed above by topical fit with each part's existing members,
+# per each paper's own "It belongs to Notebook / beside AP##" self-placement (in
+# extract/txt/AP4[3-8]*.txt) — note the site's own Notebook I-VIII numbering is a DIFFERENT axis
+# from this dict's parts I-VIII (e.g. site Notebook V "Particles and Matter" != this dict's part
+# V "Cosmology"), so placement here follows this repo's own existing thematic grouping, not the
+# site's Notebook label:
+#   AP43 (Gravity of Possibilities: pattern coherence, ethics, cruelty-as-misread) -> VI, beside
+#     AP29-33's agency/ethics cluster.
+#   AP44 (The Snap: realises AP28's G) -> V, beside its parent proof AP28.
+#   AP47 (The Flip: AP30's mass-diff, second order) -> VI, beside its parent proof AP30.
+#   AP46 (The Stretch) and AP48 (The Assembly) are cosmology, each explicitly "beside AP42" -> VIII.
+#   AP45 (The Blink) rides with AP44 in V — "beside AP44" per its own text.
 
 # AP id → human title, recovered from each PDF's cover (basename after the number).
 AP_TITLES = {
@@ -64,7 +77,8 @@ AP_TITLES = {
     "AP32": "The Correction (Ethics)", "AP33": "The Boundary", "AP34": "The Inversion",
     "AP35": "The Ledger (Economics)", "AP36": "The Feed", "AP37": "The First Boundary",
     "AP38": "The Exit", "AP39": "The Scaffold", "AP40": "The Irrational", "AP41": "The Loop",
-    "AP42": "The Clock",
+    "AP42": "The Clock", "AP43": "The Gravity of Possibilities", "AP44": "The Snap",
+    "AP45": "The Blink", "AP46": "The Stretch", "AP47": "The Flip", "AP48": "The Assembly",
 }
 
 # Declared corpus facts (from the registry header + llms.txt + provenance findings).
@@ -75,15 +89,18 @@ CORPUS_FACTS = {
     "url": "https://the420code.org",
     "measured_input": "alpha (fine-structure constant) ~ 1/137",
     "free_parameters": "0",
-    "ks_declared_total": "568",
-    "ks_declared_physics": "284",
+    "ks_declared_total": "583",
+    "ks_declared_physics": "299",
     "ks_declared_philosophy": "28",
     "ks_declared_oh_models": "256",
-    "ks_declared_closed": "12",
-    "ks_declared_live": "552",
+    "ks_declared_closed": "13",
+    "ks_declared_live": "564",
     "ks_declared_non_negotiable": "6",
-    "ap_published": "44 (AP01-AP44); AP44 The Snap LOCKED 2026-08-11",
-    "registry_version_note": "MKSR v5.27 after AP44 lock on true July baseline v5.26/561; nothing ships v5.26/567 (PROV-CCC.8 erratum)",
+    "ap_published": "48 (AP01-AP48); AP48 The Assembly LOCKED 2026-09-04 (FINAL v1.1)",
+    "registry_version_note": "MKSR v5.27 (4 September 2026) — post-AP48 build: AP44 The Snap, "
+        "AP45 The Blink, AP46 The Stretch, AP47 The Flip, AP48 The Assembly admitted (23 new "
+        "switches, 561->583); KS-NPP.1 and KS-45.1 FIRED (shown, never repaired); KS-STRETCH.4 "
+        "CLOSED contingent on KS-ASM.2.",
 }
 
 
@@ -111,7 +128,7 @@ def build(reset: bool = True) -> sqlite3.Connection:
         conn.execute("INSERT INTO axiom(id,symbol,name,statement,family) VALUES(?,?,?,?, 'core')",
                      (sym, sym, name, stmt))
 
-    # --- proofs (42 APs) ---
+    # --- proofs (48 APs) ---
     for ap, title in AP_TITLES.items():
         no, ptitle, domain = _part_for(ap)
         pdf = next((p.name for p in (ROOT / "mirror" / "pdf").glob(f"{ap}_*.pdf")), f"{ap}.pdf")

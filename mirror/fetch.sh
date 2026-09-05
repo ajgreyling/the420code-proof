@@ -11,9 +11,18 @@ echo "[mirror] PDFs…"
 ok=0; fail=0
 while IFS= read -r f; do
   [ -z "$f" ] && continue
-  if curl -sf --max-time 120 --retry 3 --retry-delay 2 -A "$UA" "$BASE/$f" -o "pdf/$f"; then
-    [ "$(wc -c < "pdf/$f")" -ge 1000 ] && ok=$((ok+1)) || { echo "  tiny: $f"; fail=$((fail+1)); }
-  else echo "  FAIL (likely 404): $f"; fail=$((fail+1)); rm -f "pdf/$f"; fi
+  tmp="pdf/.$f.part"
+  # Download to a temp file and only replace the destination on success — curl's -o
+  # truncates its target immediately, so writing straight to "pdf/$f" would destroy a
+  # good prior mirror the instant a re-fetch fails (e.g. transient 403/429/404).
+  if curl -sf --max-time 120 --retry 3 --retry-delay 2 -A "$UA" "$BASE/$f" -o "$tmp" \
+      && [ "$(wc -c < "$tmp")" -ge 1000 ]; then
+    mv "$tmp" "pdf/$f"; ok=$((ok+1))
+  else
+    echo "  FAIL (likely 404, or too small — kept existing copy if any): $f"
+    fail=$((fail+1)); rm -f "$tmp"
+  fi
+  sleep 0.3
 done < manifest.txt
 echo "[mirror] pdf ok=$ok fail=$fail"
 
